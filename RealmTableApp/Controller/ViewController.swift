@@ -18,7 +18,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     let realmCRUDModel = RealmCRUDModel()
-    let alert = Alert()
     
     
     override func viewDidLoad() {
@@ -92,7 +91,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        self.createTextFieldAlert(deleteNumber: indexPath.row)
+        self.createTextFieldAlert(deleteCellNumber: indexPath.row)
         
     }
     
